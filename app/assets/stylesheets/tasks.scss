@@ -8,7 +8,7 @@ body {
 a {
   text-decoration: none;
   color: grey;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 a:hover {
@@ -18,10 +18,9 @@ opacity: 1;
 .container {
   display: flex;
   justify-content: space-between;
-  padding-left:75px;
+  padding-left:30px;
   flex-direction: column;
-  border-left: 1px solid grey;
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .annoying {
@@ -29,5 +28,13 @@ opacity: 1;
 }
 
 .card {
-  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  padding-left:50px;
+  margin-right:50px;
+
+
+}
+
+.edit {
+  color: darkred;
 }

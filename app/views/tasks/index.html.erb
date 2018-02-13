@@ -10,9 +10,14 @@
 <%@tasks.each do |task| %>
 <div class = card>
 <h3>To Do: <%= link_to "#{task.title}", "/tasks/#{task.id}"%>
-<%= form_for task do |f| %>
-<%= f.check_box :completed %>
-<% end %>
+  <p></p>
+<div class="edit">
+  <% if task.completed ==true %>
+  <%= "[x]" %>
+  <% else %>
+  <%= "[]" %>
+  <% end %>
+ </div>
 <p></p>
 <%= link_to "Delete", task_path(task),
   method: :delete,
