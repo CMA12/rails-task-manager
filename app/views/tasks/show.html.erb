@@ -1,0 +1,8 @@
+<h1><em>Task:</em>   <%= @task.title %></h1>
+<h2><em>Your notes:</em>   <%= @task.details %></h2>
+
+<%= link_to 'Update this task', "#{@task.id}/edit" %>
+
+<p></p>
+
+<%= link_to 'Back to index', '/tasks' %>
